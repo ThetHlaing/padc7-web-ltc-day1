@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Box Model</title>
+  <style>
+    .align-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .circle {
+      color: white;
+      text-align: center;
+      background-color: blue;
+      border-radius: 50px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .bigbox {
+      width: 400px;
+      height: 100px;
+      background-color: seagreen;
+      color: white;
+    }
+
+    .ovarlapbox {
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: rgb(163, 76, 18);
+      color: #fff;
+      transform: translate(100px, 30px);
+
+    }
+
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid seagreen;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Box Model</h1>
+  <div>
+    <p>Everything is box</p>
+  </div>
+
+  <div class="circle align-center">
+    I'm a box
+  </div>
+
+  <div>
+    <div class="ovarlapbox align-center">Some Overlapping text</div>
+    <div class="bigbox align-center"><span>Welcome to PACD</span></div>
+  </div>
+
+  <div class="arrow-down">
+  </div>
+
+</body>
+
+</html>

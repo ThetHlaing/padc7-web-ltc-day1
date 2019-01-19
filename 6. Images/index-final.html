@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Image</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<img src="https://placekitten.com/320/300" alt="Kitty Image" />
+
+	<figure>
+		<picture>
+		    <source srcset="https://placekitten.com/1000/800" media="(min-width: 1000px)">
+			<source srcset="https://placekitten.com/770/400" media="(min-width: 770px)">
+			<source srcset="https://placekitten.com/480/250" media="(min-width: 480px)">
+			<img src="https://placekitten.com/320/300" alt="Kitty Image" 
+			srcset="https://placekitten.com/320/300,
+			https://placekitten.com/480/450 1.5x,
+			https://placekitten.com/640/600 2x">
+		</picture>
+		<figcaption>Responsive Kitty Image Here</figcaption>
+	</figure>
+
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank">Picture</a><br/>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Figure</a>
+
+	
+</body>
+
+</html>
